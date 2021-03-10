@@ -1,6 +1,6 @@
 **Please read it!**
 # How to help
-Use beta versions (or the latest), and if you find any bug, [open an issue]([WRITE])!
+Use beta versions (or the latest), and if you find any bug, [open an issue](https://github.com/koviubi56/licensekey/issues/new?assignees=&labels=Bug&template=bug_report.md&title=BUG)!
 
 But how?
 ## Write a good issue
