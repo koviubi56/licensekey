@@ -38,7 +38,7 @@ Submit the issue, and done!
 #### [Terms of service](https://docs.github.com/github/site-policy/github-terms-of-service)
 #### [Community Guidelines](https://docs.github.com/articles/github-community-guidelines)
 ### Our rules
-#### [Code of conduct]([WRITE])
-#### [License]([WRITE])
+#### [Code of conduct](https://github.com/koviubi56/licensekey/blob/main/CODE_OF_CONDUCT.md)
+#### [License](https://github.com/koviubi56/licensekey/blob/main/LICENSE)
 
 __If you found any bad things: **k56.report@hash.fyi**__
