@@ -40,5 +40,3 @@ Submit the issue, and done!
 ### Our rules
 #### [Code of conduct](https://github.com/koviubi56/licensekey/blob/main/CODE_OF_CONDUCT.md)
 #### [License](https://github.com/koviubi56/licensekey/blob/main/LICENSE)
-
-__If you found any bad things: **k56.report@hash.fyi**__
