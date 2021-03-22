@@ -99,16 +99,7 @@ def isGood(diff, licensekey, pwd=1):
                                 return False
                             else:
                                 return True
-                        else:
-                            return False
-                    else:
-                        return False
-                else:
-                    return False
-            else:
-                return False
-        else:
-            return False
+        return False
     else:
         if licensekey[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
             return False
@@ -120,7 +111,7 @@ def isGood(diff, licensekey, pwd=1):
 
 
 if __name__ == '__main__':
-    print("To see the source code: https://gist.github.com/koviubi56/94899c1c44a54520bcf3a839057a2550")
+    print("To see the source code: https://github.com/koviubi56/licensekey")
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     # ! This program is distributed in the hope that it will be useful, but                                          !
     # ! WITHOUT ANY WARRANTY without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE!
