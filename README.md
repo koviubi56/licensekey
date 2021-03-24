@@ -1,4 +1,7 @@
 # Licensekey
+
+[![GNU AGPL v3.0](https://img.shields.io/github/license/koviubi56/licensekey)](https://github.com/koviubi56/licensekey/blob/main/LICENSE)
+
 Licensekey is a very useful python module, if your software is not free.
 
 You can (somehow) give the licensekey to the user, who paid for it, and at the start of the program, the user needs to write his/her license key.
