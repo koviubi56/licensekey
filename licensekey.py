@@ -65,12 +65,11 @@ def generate(diff, pwd=1):
         while generated[5] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
             generated[5] = random.randrange(100, 1000) * pwd
         return generated
-    else:
-        generated = [0, 222222222222]
-        while generated[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
-            generated[0] = random.randrange(100, 999)
-        generated[1] = random.randrange(1000000, 10000000) + pwd
-        return generated
+    generated = [0, 222222222222]
+    while generated[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
+        generated[0] = random.randrange(100, 999)
+    generated[1] = random.randrange(1000000, 10000000) + pwd
+    return generated
 
 
 def isGood(diff, licensekey, pwd=1):
@@ -97,17 +96,13 @@ def isGood(diff, licensekey, pwd=1):
                         if licensekey[4] / pwd >= 10000 and licensekey[4] / pwd < 99999:
                             if licensekey[5] / pwd in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
                                 return False
-                            else:
-                                return True
+                            return True
         return False
-    else:
-        if licensekey[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
-            return False
-        else:
-            if 10000000 > licensekey[1] - pwd and licensekey[1] - pwd >= 1000000:
-                return True
-            else:
-                return False
+    if licensekey[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
+        return False
+    if 10000000 > licensekey[1] - pwd and licensekey[1] - pwd >= 1000000:
+        return True
+    return False
 
 
 if __name__ == '__main__':
@@ -128,10 +123,11 @@ if __name__ == '__main__':
             diff = True
             # !    ^               !
             # !    | True / False  !
+
             # **************************************************
             # * Set the password to a number between 1 and 1000*
             # **************************************************
-            pwd = 1000
+            pwd = 756
             # !   ^         !
             # !   | 1-1000  !
             if diff:
