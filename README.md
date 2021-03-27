@@ -1,6 +1,7 @@
 # Licensekey
 
 [![GNU AGPL v3.0](https://img.shields.io/github/license/koviubi56/licensekey)](https://github.com/koviubi56/licensekey/blob/main/LICENSE)
+[![CodeFactor](https://www.codefactor.io/repository/github/koviubi56/licensekey/badge)](https://www.codefactor.io/repository/github/koviubi56/licensekey)
 
 Licensekey is a very useful python module, if your software is not free.
 
