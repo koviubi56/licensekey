@@ -12,3 +12,5 @@ To get started, [download the latest version](https://github.com/koviubi56/licen
 For help: @koviubi56
 
 Creator, coder: @koviubi56
+
+<!-- Hello world: test comment -->
