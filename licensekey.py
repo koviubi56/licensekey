@@ -151,7 +151,3 @@ if __name__ == '__main__':
             print("Error code: RuntimeError")
             print("It's (99%) your problem! Please don't do that again!")
             input("Press [ENTER] to continue. . .")
-        else:
-            print("Generated and checked successfully!")
-        finally:
-            continue
