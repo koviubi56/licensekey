@@ -114,44 +114,34 @@ if __name__ == '__main__':
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     print("\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.\n")
     while True:
-        try:
-            # ***************************************************************************
-            # * Set "diff" (var) to True or False.                                      *
-            # * If it's True, it's generating, and checking the "hard mode" licensekey, *
-            # * If it's False, it's generating, and checking the "easy mode" licensekey.*
-            # ***************************************************************************
-            diff = True
-            # !    ^               !
-            # !    | True / False  !
+        # ***************************************************************************
+        # * Set "diff" (var) to True or False.                                      *
+        # * If it's True, it's generating, and checking the "hard mode" licensekey, *
+        # * If it's False, it's generating, and checking the "easy mode" licensekey.*
+        # ***************************************************************************
+        diff = True
+        # !    ^               !
+        # !    | True / False  !
 
-            # **************************************************
-            # * Set the password to a number between 1 and 1000*
-            # **************************************************
-            pwd = 756
-            # !   ^         !
-            # !   | 1-1000  !
-            if diff:
-                print(str(generate(True, pwd)))
-                u1 = int(input(">"))
-                u2 = int(input(">"))
-                u3 = input(">")
-                u4 = int(input(">"))
-                u5 = int(input(">"))
-                u6 = int(input(">"))
-                key = [u1, u2, u3, u4, u5, u6]
-                print(str(isGood(True, key, pwd)))
-            else:
-                print(str(generate(False, pwd)))
-                u1 = int(input(">"))
-                u2 = int(input(">"))
-                key = [u1, u2]
-                print(str(isGood(False, key, pwd)))
-        except:
-            print("[ERROR]")
-            print("Error code: RuntimeError")
-            print("It's (99%) your problem! Please don't do that again!")
-            input("Press [ENTER] to continue. . .")
+        # **************************************************
+        # * Set the password to a number between 1 and 1000*
+        # **************************************************
+        pwd = 756
+        # !   ^         !
+        # !   | 1-1000  !
+        if diff:
+            print(str(generate(True, pwd)))
+            u1 = int(input(">"))
+            u2 = int(input(">"))
+            u3 = input(">")
+            u4 = int(input(">"))
+            u5 = int(input(">"))
+            u6 = int(input(">"))
+            key = [u1, u2, u3, u4, u5, u6]
+            print(str(isGood(True, key, pwd)))
         else:
-            print("Generated and checked successfully!")
-        finally:
-            continue
+            print(str(generate(False, pwd)))
+            u1 = int(input(">"))
+            u2 = int(input(">"))
+            key = [u1, u2]
+            print(str(isGood(False, key, pwd)))

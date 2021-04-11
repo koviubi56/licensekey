@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2021-04-11
+### Removed
+- We removed the `try-except` ([ce3323b](https://github.com/koviubi56/licensekey/commit/ce3323b4f3abd4724bb2a0905d6061c27c0ce794))
+
 ## [1.1.1] - 2021-03-27
 ### Fixed
 - Fixed the `Unnecessary "else" after "return"` and `Unnecessary "elif" after "return"` issues.
