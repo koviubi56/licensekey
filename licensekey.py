@@ -89,20 +89,33 @@ def isGood(diff, licensekey, pwd=1):
     if pwd > 1000:
         raise OverflowError("The password can't be 1001 or larger!")
     if diff:
-        if licensekey[0] / pwd >= 100 and licensekey[0] / pwd < 756:
-            if licensekey[1] / pwd >= 10 and licensekey[1] / pwd < 69:
-                if licensekey[2] in ["GAN", "DHI", "GNU", "AGP", "SZE", "RDA"]:
-                    if licensekey[3] / pwd in [252, 392, 483]:
-                        if licensekey[4] / pwd >= 10000 and licensekey[4] / pwd < 99999:
-                            if licensekey[5] / pwd in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
-                                return False
-                            return True
+        if (
+            licensekey[0] / pwd >= 100
+            and licensekey[0] / pwd < 756
+            and licensekey[1] / pwd >= 10
+            and licensekey[1] / pwd < 69
+            and licensekey[2] in ["GAN", "DHI", "GNU", "AGP", "SZE", "RDA"]
+            and licensekey[3] / pwd in [252, 392, 483]
+            and licensekey[4] / pwd >= 10000
+            and licensekey[4] / pwd < 99999
+        ):
+            return licensekey[5] / pwd not in [
+                000,
+                111,
+                222,
+                333,
+                444,
+                555,
+                666,
+                777,
+                888,
+                999,
+            ]
+
         return False
     if licensekey[0] in [000, 111, 222, 333, 444, 555, 666, 777, 888, 999]:
         return False
-    if 10000000 > licensekey[1] - pwd and licensekey[1] - pwd >= 1000000:
-        return True
-    return False
+    return licensekey[1] - pwd < 10000000 and licensekey[1] - pwd >= 1000000
 
 
 if __name__ == '__main__':
@@ -113,20 +126,20 @@ if __name__ == '__main__':
     # ! See the GNU Affero General Public License for more details.                                                 !
     # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     print("\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.\n")
-    while True:
-        # ***************************************************************************
-        # * Set "diff" (var) to True or False.                                      *
-        # * If it's True, it's generating, and checking the "hard mode" licensekey, *
-        # * If it's False, it's generating, and checking the "easy mode" licensekey.*
-        # ***************************************************************************
-        diff = True
-        # !    ^               !
-        # !    | True / False  !
+    # ***************************************************************************
+    # * Set "diff" (var) to True or False.                                      *
+    # * If it's True, it's generating, and checking the "hard mode" licensekey, *
+    # * If it's False, it's generating, and checking the "easy mode" licensekey.*
+    # ***************************************************************************
+    diff = True
+    # !    ^               !
+    # !    | True / False  !
 
-        # **************************************************
-        # * Set the password to a number between 1 and 1000*
-        # **************************************************
-        pwd = 756
+    # **************************************************
+    # * Set the password to a number between 1 and 1000*
+    # **************************************************
+    pwd = 756
+    while True:
         # !   ^         !
         # !   | 1-1000  !
         if diff:
