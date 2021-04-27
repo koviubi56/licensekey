@@ -21,6 +21,6 @@ We don't support everything forever.
 
 (YYYY.MM.DD.)
 
-Mainstream (New stuffs + bugfixes + security updates): 2021.06.01.
+Mainstream (New stuffs + bugfixes + security updates): 2021.05.01.
 
-Extended (~~New stuffs~~ + bugfixes + security updates): 2021.12.31.
+Extended (~~New stuffs~~ + bugfixes + security updates): 2021.05.31.
